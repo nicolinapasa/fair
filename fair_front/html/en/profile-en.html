@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&family=Patrick+Hand+SC&family=Poppins:wght@400;500;600;700;800;900&family=Rufina:wght@400;700&family=Zilla+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>FAIR</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="icon" href="assets/img/diamond.png">
+</head>
+<body>
+    <header>
+        <div class="pre-header">
+            <div class="languages">
+                <a href="../ro/profile-ro.html">RO</a>
+                <div class="vertical-line"></div>
+                <a href="profile-en.html">EN</a>
+            </div>
+            <div class="log-sgnup">
+                <a href="login-en.html">Login</a>
+                <div class="vertical-line"></div>
+                <a href="sign-up-en.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="header">
+            <a href="index-en.html" class="logo">FAIR</a>
+            <ul class="menu">
+                <li><a href="products-en.html">PRODUCTS</a></li>
+                <li><a href="about-us-en.html">ABOUT US</a></li>
+                <li><a href="personalize-en.html">PERSONALIZE</a></li>
+                <li><a href="contacts-en.html">CONTACTS</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="icon" id="fav-button"><img src="assets/img/heart.png" alt="fav"></div>
+                <div class="icon" id="cart-button"><img src="assets/img/shopping-bag.png" alt="cart"></div>
+                <a href="profile-en.html" class="icon"><img src="assets/img/user.png" alt="profile"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile-container">
+        <div>
+            <p id="welcome">WELCOME, </p>
+        </div>
+        <div>
+            <div>
+                <button id="acc-det" class="bold">Account Details</button>
+                <button id="orders">Orders</button>
+                <button id="wishlist">Your Wishlist</button>
+            </div>
+            <div class="acc-details">
+                <p>Name Surname</p>
+                <p id="name"></p>
+                <p>Your email</p>
+                <p id="eemail">example@gmail.com</p>
+            </div>
+            <div class="orders hidden">
+                <div id="o">
+                    <p>There are no previous orders.</p>
+                </div>
+            </div>
+            <div class="wishlist hidden">
+                <p>Your Wishlist</p>
+                <div id="wish">
+                    <p>There is nothing in your wishlist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="menu">
+            <li><a href="products-en.html">PRODUCTS</a></li>
+            <li><a href="about-us-en.html">ABOUT US</a></li>
+            <li><a href="personalize-en.html">PERSONALIZE</a></li>
+            <li><a href="contacts-en.html">CONTACTS</a></li>
+        </ul>
+        <p>Contact us by email with your request and we will work with you privately to source what you are looking for! You can set up an appointment at our office or an interactive appointment through FaceTime. It would be our pleasure to help you find the jewelry of your dreams.</p>
+        <label for="email">
+            <input type="text" id="email-box" placeholder="Enter your email">
+            <img src="assets/img/email.png" alt="submit" id="email-submit">
+        </label>
+        <p class="copyrights">&#169 2023 Fair Jewelry Store. All rights reserved.</p>
+    </footer>
+
+    <div id="big-shopping-cart">
+        <div>
+            <p>Bag</p>
+            <button id="cart-close-button">+</button>
+        </div>
+        <div id="shopping-cart">There is nothing in your bag yet.</div>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="favourites">
+        <div>
+            <p>Favourite items</p>
+            <button id="fav-close-button">+</button>
+        </div>
+        <div id="fav">There is nothing in your favourites yet.</div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        let acc_btn = document.querySelector('#acc-det');
+        let ord_btn = document.querySelector('#orders');
+        let wish_btn = document.querySelector('#wishlist');
+        let section1 = document.querySelector('.acc-details');
+        let section2 = document.querySelector('.orders');
+        let section3 = document.querySelector('.wishlist');
+
+        acc_btn.addEventListener('click', function(){
+            acc_btn.classList.add('bold');
+            ord_btn.classList.remove('bold');
+            wish_btn.classList.remove('bold');
+            section1.classList.remove('hidden');
+            section2.classList.add('hidden');
+            section3.classList.add('hidden');
+        });
+
+        ord_btn.addEventListener('click', function(){
+            acc_btn.classList.remove('bold');
+            ord_btn.classList.add('bold');
+            wish_btn.classList.remove('bold');
+            section1.classList.add('hidden');
+            section2.classList.remove('hidden');
+            section3.classList.add('hidden');
+        });
+
+        wish_btn.addEventListener('click', function(){
+            acc_btn.classList.remove('bold');
+            ord_btn.classList.remove('bold');
+            wish_btn.classList.add('bold');
+            section1.classList.add('hidden');
+            section2.classList.add('hidden');
+            section3.classList.remove('hidden');
+        });
+
+        fav_prod = JSON.parse(localStorage.getItem('favs')) || [];
+        favs_container = document.getElementById('wish');
+        for(let i = 0; i < fav_prod.length; i++){
+            if(i == 0){
+                favs_container.replaceChildren();
+            }
+            let div = document.createElement('div');
+            favs_container.appendChild(div);
+            div.classList.add("cart-product-box");
+            let image_box = document.createElement('div');
+            image_box.classList.add('cart-image-box');
+            let name = document.createElement('p');
+            let text = document.createElement('div');
+            let price = document.createElement('p');
+            div.appendChild(image_box);
+            div.appendChild(text);
+            text.appendChild(name);
+            text.appendChild(price);
+            text.classList.add('fav-text');
+            name.classList.add('fav-prod-name');
+            price.classList.add('cart-price');
+            name.innerHTML = "FAIR " + fav_prod[i].metal + " " + fav_prod[i].shape + " " + fav_prod[i].stone + " " + fav_prod[i].type;
+            price.innerHTML = fav_prod[i].price + "$";
+            image_box.style.backgroundImage = 'url('+fav_prod[i].img+')';
+
+            const remove = document.createElement('button');
+            remove.id = 'remove';
+            remove.innerHTML = '+';
+            div.appendChild(remove);
+            remove.addEventListener('click', function(){
+                fav_prod.splice(i, 1);
+                localStorage.setItem('favs', JSON.stringify(fav_prod));
+                location.reload();
+            });
+
+            const add_cart = document.createElement('button');
+            add_cart.classList.add('btn');
+            add_cart.classList.add('da-btn');
+            add_cart.innerHTML = 'ADD TO CART';
+            text.appendChild(add_cart);
+            add_cart.onclick = function aaa(){
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                let pr = fav_prod[i];
+                cart.push(pr);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                fav_prod.splice(i, 1);
+                localStorage.setItem('favs', JSON.stringify(fav_prod));
+                location.reload();
+            }
+        }
+
+        let bought = JSON.parse(localStorage.getItem('bought'));
+        let container = document.getElementById('o');
+        for(let i = 0; i < bought.length; i++){
+            if(i == 0){
+                container.replaceChildren();
+            }
+            let div = document.createElement('div');
+            container.appendChild(div);
+            div.classList.add("cart-product-box");
+            let image_box = document.createElement('div');
+            image_box.classList.add('cart-image-box');
+            let name = document.createElement('p');
+            let text = document.createElement('div');
+            let price = document.createElement('p');
+            div.appendChild(image_box);
+            div.appendChild(text);
+            text.appendChild(name);
+            text.appendChild(price);
+            text.classList.add('fav-text');
+            name.classList.add('fav-prod-name');
+            price.classList.add('cart-price');
+            name.innerHTML = "FAIR " + bought[i].metal + " " + bought[i].shape + " " + bought[i].stone + " " + bought[i].type;
+            price.innerHTML = bought[i].price + "$";
+            image_box.style.backgroundImage = 'url('+bought[i].img+')';
+        }
+
+
+        l = localStorage.getItem('login');
+        if(l == 'true'){
+            document.getElementById('eemail').innerHTML = localStorage.getItem('curr_email');
+            document.getElementById('welcome').innerHTML += localStorage.getItem('curr_name');
+            document.getElementById('name').innerHTML = localStorage.getItem('curr_surname') + " " + localStorage.getItem('curr_name');
+        }
+
+    </script>
+</body>
+</html>

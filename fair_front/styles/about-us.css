@@ -1,0 +1,136 @@
+
+.about-us-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12vh;
+    background: #F1F1F1;
+}
+
+.about-us-container > div:first-child{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.about-us-container > div:first-child > div:first-child{
+    width: 33vw;
+    height: 85vh;
+    background: url(assets/img/about-us1.svg);
+    background-position: center center;
+    position: absolute;
+    left: 10vw;
+}
+
+.about-us-container > div:first-child > div:first-child:hover, .gr1:hover, .gr2:hover, .gr3:hover, .gr4:hover{
+    box-shadow: 1px 1px 10px rgb(52, 52, 52);
+    transition: 0.5s;
+}
+
+.about-us-container > div:first-child > div:last-child{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-us-container > div:first-child > div:last-child div{
+    height: 85%;
+    width: 100%;
+    background-color: #703D35;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-container > div:first-child > div:last-child > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    font-family: 'Rufina', serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about-us-container > div:first-child > div:last-child div p{
+    width: 70%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+    height: 40%;
+    margin-left: 3vw;
+}
+
+.about-us-container > div:last-child{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+
+.about-us-container > div:last-child > div:first-child{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    gap: 7vh;
+    grid-template-areas:
+    'gr1 gr1 gr1 gr2 gr2'
+    'gr1 gr1 gr1 gr2 gr2'
+    'gr3 gr3 gr3 gr2 gr2'
+    'gr3 gr3 gr3 gr4 gr4'
+    'gr3 gr3 gr3 gr4 gr4';
+}
+
+.about-us-container > div:last-child > div:last-child{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-container > div:last-child div:last-child p{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-top: 10%;
+}
+
+.about-us-container > div:last-child > div:first-child div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.gr1{
+    grid-area: gr1;
+    background-image: url(assets/img/about-us-grid1.svg);
+}
+
+.gr2{
+    grid-area: gr2;
+    background-image: url(assets/img/about-us-grid2.svg);
+}
+
+.gr3{
+    grid-area: gr3;
+    background-image: url(assets/img/about-us-grid3.svg);
+}
+
+.gr4{
+    grid-area: gr4;
+    background-image: url(assets/img/about-us-grid4.svg);
+}

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&family=Patrick+Hand+SC&family=Poppins:wght@400;500;600;700;800;900&family=Rufina:wght@400;700&family=Zilla+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>FAIR</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/personalize.css">
+    <link rel="icon" href="assets/img/diamond.png">
+</head>
+<body>
+    <header>
+        <div class="pre-header">
+            <div class="languages">
+                <a href="../ro/personalize-ro.html">RO</a>
+                <div class="vertical-line"></div>
+                <a href="personalize-en.html">EN</a>
+            </div>
+            <div class="log-sgnup">
+                <a href="login-en.html">Login</a>
+                <div class="vertical-line"></div>
+                <a href="sign-up-en.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="header">
+            <a href="index-en.html" class="logo">FAIR</a>
+            <ul class="menu">
+                <li><a href="products-en.html">PRODUCTS</a></li>
+                <li><a href="about-us-en.html">ABOUT US</a></li>
+                <li><a href="personalize-en.html">PERSONALIZE</a></li>
+                <li><a href="contacts-en.html">CONTACTS</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="icon" id="fav-button"><img src="assets/img/heart.png" alt="fav"></div>
+                <div class="icon" id="cart-button"><img src="assets/img/shopping-bag.png" alt="cart"></div>
+                <a href="profile-en.html" class="icon"><img src="assets/img/user.png" alt="profile"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="personalize-container">
+        <p>CREATE YOUR OWN JEWELRY DESIGNS</p>
+        <p>From custom engagement rings to nameplate necklaces and everything in between, create custom engagement and personalized jewelry styles that speak to their personal style.</p>
+        <div>
+            <button id="ring-btn">
+                <p>CUSTOM RINGS</p>
+                <div>
+                    <span>PERSONALIZE</span>
+                </div>
+            </button>
+            <button id="earrings-btn">
+                <p>CUSTOM EARRINGS</p>
+                <div>
+                    <span>PERSONALIZE</span>
+                </div>
+            </button>
+            <button id="necklace-btn">
+                <p>CUSTOM NECKLACES</p>
+                <div>
+                    <span>PERSONALIZE</span>
+                </div>
+            </button>
+            <button id="bracelet-btn">
+                <p>CUSTOM BRACELETS</p>
+                <div>
+                    <span>PERSONALIZE</span>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <section class="personalize-section">
+        <div class="pers-ring hidden">
+            <p>MAKE A CUSTOM RING</p>
+            <div>
+                <p>Metal Type</p>
+                <div>
+                    <input type="radio" name="metal" id="silver" class="silver" value="Silver">
+                    <label for="silver">SILVER</label>
+
+                    <input type="radio" name="metal" id="gold" class="gold" value="Gold">
+                    <label for="gold">GOLD</label>
+
+                    <input type="radio" name="metal" id="rose-gold" class="rose-gold" value="Rose-Gold">
+                    <label for="rose-gold">ROSE GOLD</label>
+                </div>
+            </div>
+            <div>
+                <p>Stone Type</p>
+                <div class="stone-types">
+                    <input type="radio" name="stone" id="no-stone" class="no" value="">
+                    <label for="no-stone">No Stone</label>
+
+                    <input type="radio" name="stone" id="diamond" class="diamond" value="Diamond">
+                    <label for="diamond">Diamond</label>
+
+                    <input type="radio" name="stone" id="amethyst" class="amethyst" value="Amethyst">
+                    <label for="amethyst">Amethyst</label>
+
+                    <input type="radio" name="stone" id="sapphire" class="sapphire" value="Sapphire">
+                    <label for="sapphire">Sapphire</label>
+
+                    <input type="radio" name="stone" id="ruby" class="ruby" value="Ruby">
+                    <label for="ruby">Ruby</label>
+
+                    <input type="radio" name="stone" id="pearl" class="pearl" value="Pearl">
+                    <label for="pearl">Pearl</label>
+                </div>
+            </div>
+            <div>
+                <p>Stone Shape</p>
+                <div class="stone-types">
+                    <input type="radio" name="shape" id="no-shape" class="no" value="">
+                    <label for="no-shape">No Shape</label>
+
+                    <input type="radio" name="shape" id="pear" class="pear" value="Pear">
+                    <label for="pear">Pear</label>
+
+                    <input type="radio" name="shape" id="cushion" class="cushion" value="Cushion">
+                    <label for="cushion">Cushion</label>
+
+                    <input type="radio" name="shape" id="oval" class="oval" value="Oval">
+                    <label for="oval">Oval</label>
+
+                    <input type="radio" name="shape" id="round" class="round" value="Round">
+                    <label for="round">Round</label>
+
+                    <input type="radio" name="shape" id="elongated" class="elongated" value="Elongated">
+                    <label for="elongated">Elongated</label>
+                </div>
+            </div>
+
+            <div>
+                <p>Size</p>
+                <div class="sizes">
+                    <input type="radio" name="size" id="5" value="5">
+                    <label for="5">5</label>
+
+                    <input type="radio" name="size" id="6" value="6">
+                    <label for="6">6</label>
+
+                    <input type="radio" name="size" id="7" value="7">
+                    <label for="7">7</label>
+
+                    <input type="radio" name="size" id="8" value="8">
+                    <label for="8">8</label>
+
+                    <input type="radio" name="size" id="9" value="9">
+                    <label for="9">9</label>
+
+                    <input type="radio" name="size" id="10" value="10">
+                    <label for="10">10</label>
+
+                    <input type="radio" name="size" id="11" value="11">
+                    <label for="11">11</label>
+
+                    <input type="radio" name="size" id="12" value="12">
+                    <label for="12">12</label>
+                </div>
+            </div>
+            <button class="btn" id="ring-order">PLACE ORDER</button>
+        </div>
+
+        <div class="pers-earrings hidden">
+            <p>MAKE CUSTOM EARRINGS</p>
+            <div>
+                <p>Metal Type</p>
+                <div>
+                    <input type="radio" name="metal" id="silver-earring" class="silver" value="Silver">
+                    <label for="silver-earring">SILVER</label>
+
+                    <input type="radio" name="metal" id="gold-earring" class="gold" value="Gold">
+                    <label for="gold-earring">GOLD</label>
+
+                    <input type="radio" name="metal" id="rose-gold-earring" class="rose-gold" value="Rose-Gold">
+                    <label for="rose-gold-earring">ROSE GOLD</label>
+                </div>
+            </div>
+            <div>
+                <p>Type</p>
+                <div class="stone-types">
+                    <input type="radio" name="type" id="stud" value="Stud">
+                    <label for="stud">Studs</label>
+
+                    <input type="radio" name="type" id="drop" value="Drop">
+                    <label for="drop">Drops</label>
+
+                    <input type="radio" name="type" id="hoop" value="Hoop">
+                    <label for="hoop">Hoops</label>
+                </div>
+            </div>
+            <div>
+                <p>Stone Type</p>
+                <div class="stone-types">
+                    <input type="radio" name="stone" id="no-stone-earring" class="no" value="">
+                    <label for="no-stone-earring">No Stone</label>
+
+                    <input type="radio" name="stone" id="diamond-earring" class="diamond" value="Diamond">
+                    <label for="diamond-earring">Diamond</label>
+
+                    <input type="radio" name="stone" id="pearl-earring" class="pearl" value="Pearl">
+                    <label for="pearl-earring">Pearl</label>
+                </div>
+            </div>
+            <button class="btn" id="earrings-order">PLACE ORDER</button>
+        </div>
+        <div class="pers-necklace hidden">
+            <p>MAKE A CUSTOM NECKLACE</p>
+            <div>
+                <p>Metal Type</p>
+                <div>
+                    <input type="radio" name="metal" id="silver-necklace" class="silver" value="=Silver">
+                    <label for="silver-necklace">SILVER</label>
+
+                    <input type="radio" name="metal" id="gold-necklace" class="gold" value="Gold">
+                    <label for="gold-necklace">GOLD</label>
+
+                    <input type="radio" name="metal" id="rose-gold-necklace" class="rose-gold" value="Rose-Gold">
+                    <label for="rose-gold-necklace">ROSE GOLD</label>
+                </div>
+            </div>
+            <div>
+                <p>Pendant</p>
+                <div class="stone-types">
+                    <input type="radio" name="pendant" id="no-pendant" class="no" value="">
+                    <label for="no-pendant">No pendant</label>
+
+                    <input type="radio" name="pendant" id="heart" class="heart" value="Heart">
+                    <label for="heart">Heart</label>
+
+                    <input type="radio" name="pendant" id="cross" class="cross" value="Cross">
+                    <label for="cross">Cross</label>
+                </div>
+            </div>
+            <div>
+                <p>Stone Type</p>
+                <div class="stone-types">
+                    <input type="radio" name="stone" id="no-stone-necklace" class="no" value="">
+                    <label for="no-stone-necklace">No Stone</label>
+
+                    <input type="radio" name="stone" id="diamond-necklace" class="diamond" value="Diamant">
+                    <label for="diamond-necklace">Diamond</label>
+
+                    <input type="radio" name="stone" id="amethyst-necklace" class="amethyst" value="Amethyst">
+                    <label for="amethyst-necklace">Amethyst</label>
+
+                    <input type="radio" name="stone" id="sapphire-necklace" class="sapphire" value="Sapphire">
+                    <label for="sapphire-necklace">Sapphire</label>
+
+                    <input type="radio" name="stone" id="ruby-necklace" class="ruby" value="Ruby">
+                    <label for="ruby-necklace">Ruby</label>
+
+                    <input type="radio" name="stone" id="pearl-necklace" class="pearl" value="Pearl">
+                    <label for="pearl-necklace">Pearl</label>
+                </div>
+            </div>
+            <div>
+                <p>Stone Shape</p>
+                <div class="stone-types">
+                    <input type="radio" name="shape" id="no-shape-necklace" class="no" value="">
+                    <label for="no-shape-necklace">No Shape</label>
+
+                    <input type="radio" name="shape" id="pear-necklace" class="pear" value="Pear">
+                    <label for="pear-necklace">Pear</label>
+
+                    <input type="radio" name="shape" id="cushion-necklace" class="cushion" value="Cushion">
+                    <label for="cushion-necklace">Cushion</label>
+
+                    <input type="radio" name="shape" id="oval-necklace" class="oval" value="Oval">
+                    <label for="oval-necklace">Oval</label>
+
+                    <input type="radio" name="shape" id="round-necklace" class="round" value="Round">
+                    <label for="round-necklace">Round</label>
+
+                    <input type="radio" name="shape" id="elongated-necklace" class="elongated" value="Elongated">
+                    <label for="elongated-necklace">Elongated</label>
+                </div>
+            </div>
+            <button class="btn" id="necklace-order">PLACE ORDER</button>
+        </div>
+        <div class="pers-bracelet hidden">
+            <p>MAKE A CUSTOM BRACELET</p>
+            <div>
+                <p>Metal Type</p>
+                <div>
+                    <input type="radio" name="metal" id="silver-bracelet" class="silver" value="Silver">
+                    <label for="silver-bracelet">SILVER</label>
+
+                    <input type="radio" name="metal" id="gold-bracelet" class="gold" value="Gold">
+                    <label for="gold-bracelet">GOLD</label>
+
+                    <input type="radio" name="metal" id="rose-gold-bracelet" class="rose-gold" value="Rose-Gold">
+                    <label for="rose-gold-bracelet">ROSE GOLD</label>
+                </div>
+            </div>
+            <div>
+                <p>Pendant</p>
+                <div class="stone-types">
+                    <input type="radio" name="pendant" id="no-pendant-bracelet" class="no" value="">
+                    <label for="no-pendant-bracelet">No pendant</label>
+
+                    <input type="radio" name="pendant" id="heart-bracelet" class="heart" value="Heart">
+                    <label for="heart-bracelet">Heart</label>
+
+                    <input type="radio" name="pendant" id="cross-bracelet" class="cross" value="Cross">
+                    <label for="cross-bracelet">Cross</label>
+                </div>
+            </div>
+            <div>
+                <p>Stone Type</p>
+                <div class="stone-types">
+                    <input type="radio" name="stone" id="no-stone-bracelet" class="no" value="">
+                    <label for="no-stone-bracelet">No Stone</label>
+
+                    <input type="radio" name="stone" id="diamond-bracelet" class="diamond" value="Diamond">
+                    <label for="diamond-bracelet">Diamond</label>
+
+                    <input type="radio" name="stone" id="amethyst-bracelet" class="amethyst" value="Amethyst">
+                    <label for="amethyst-bracelet">Amethyst</label>
+
+                    <input type="radio" name="stone" id="sapphire-bracelet" class="sapphire" value="Sapphire">
+                    <label for="sapphire-bracelet">Sapphire</label>
+
+                    <input type="radio" name="stone" id="ruby-bracelet" class="ruby" value="Ruby">
+                    <label for="ruby-bracelet">Ruby</label>
+
+                    <input type="radio" name="stone" id="pearl-bracelet" class="pearl" value="Pearl">
+                    <label for="pearl-bracelet">Pearl</label>
+                </div>
+            </div>
+            <div>
+                <p>Stone Shape</p>
+                <div class="stone-types">
+                    <input type="radio" name="shape" id="no-shape-bracelet" class="no" value="">
+                    <label for="no-shape-bracelet">No Shape</label>
+
+                    <input type="radio" name="shape" id="pear-bracelet" class="pear" value="Pear">
+                    <label for="pear-bracelet">Pear</label>
+
+                    <input type="radio" name="shape" id="cushion-bracelet" class="cushion" value="Cushion">
+                    <label for="cushion-bracelet">Cushion</label>
+
+                    <input type="radio" name="shape" id="oval-bracelet" class="oval" value="Oval">
+                    <label for="oval-bracelet">Oval</label>
+
+                    <input type="radio" name="shape" id="round-bracelet" class="round" value="Round">
+                    <label for="round-bracelet">Round</label>
+
+                    <input type="radio" name="shape" id="elongated-bracelet" class="elongated" value="Elongated">
+                    <label for="elongated-bracelet">Elongated</label>
+                </div>
+            </div>
+            <button class="btn" id="bracelet-order">PLACE ORDER</button>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="menu">
+            <li><a href="products-en.html">PRODUCTS</a></li>
+            <li><a href="about-us-en.html">ABOUT US</a></li>
+            <li><a href="personalize-en.html">PERSONALIZE</a></li>
+            <li><a href="contacts-en.html">CONTACTS</a></li>
+        </ul>
+        <p>Contact us by email with your request and we will work with you privately to source what you are looking for! You can set up an appointment at our office or an interactive appointment through FaceTime. It would be our pleasure to help you find the jewelry of your dreams.</p>
+        <label for="email">
+            <input type="text" id="email-box" placeholder="Enter your email">
+            <img src="assets/img/email.png" alt="submit" id="email-submit">
+        </label>
+        <p class="copyrights">&#169 2023 Fair Jewelry Store. All rights reserved.</p>
+    </footer>
+
+    <div id="big-shopping-cart">
+        <div>
+            <p>Bag</p>
+            <button id="cart-close-button">+</button>
+        </div>
+        <div id="shopping-cart">There is nothing in your bag yet.</div>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="favourites">
+        <div>
+            <p>Favourite items</p>
+            <button id="fav-close-button">+</button>
+        </div>
+        <div id="fav">There is nothing in your favourites yet.</div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        let ring_btn = document.getElementById('ring-btn');
+        let earrings_btn = document.getElementById('earrings-btn');
+        let necklace_btn = document.getElementById('necklace-btn');
+        let bracelet_btn = document.getElementById('bracelet-btn');
+        let section1 = document.querySelector('.pers-ring');
+        let section2 = document.querySelector('.pers-earrings');
+        let section3 = document.querySelector('.pers-necklace');
+        let section4 = document.querySelector('.pers-bracelet');
+
+        ring_btn.addEventListener('click', function(){
+            section1.classList.remove('hidden');
+            section2.classList.add('hidden');
+            section3.classList.add('hidden');
+            section4.classList.add('hidden');
+            window.scrollTo(0, 620);
+
+            document.getElementById('ring-order').addEventListener('click', function (){
+                let t = 'Ring';
+
+                let metals = document.getElementsByName('metal');
+                let m = Array.from(metals).find(radio => radio.checked);
+
+                let stones = document.getElementsByName('stone');
+                let s = Array.from(stones).find(radio => radio.checked);
+
+                let shapes = document.getElementsByName('shape');
+                let sh = Array.from(shapes).find(radio => radio.checked);
+
+                let sizes = document.getElementsByName('size');
+                let sz = Array.from(sizes).find(radio => radio.checked);
+
+                let personalize = {};
+                personalize.type = t;
+                personalize.metal = m.value;
+                personalize.stone = s.value;
+                personalize.shape = sh.value;
+                personalize.size = sz.value;
+
+                localStorage.setItem('personalize', JSON.stringify(personalize));
+                localStorage.setItem('ok', '0');
+                location.href = "checkout-en.html";
+            });
+
+        });
+
+        earrings_btn.addEventListener('click', function(){
+            section1.classList.add('hidden');
+            section2.classList.remove('hidden');
+            section3.classList.add('hidden');
+            section4.classList.add('hidden');
+            window.scrollTo(0, 620);
+
+            document.getElementById('earrings-order').addEventListener('click', function (){
+                let t = 'Earrings';
+
+                let metals = document.getElementsByName('metal');
+                let m = Array.from(metals).find(radio => radio.checked);
+
+                let stones = document.getElementsByName('stone');
+                let s = Array.from(stones).find(radio => radio.checked);
+
+                let shapes = document.getElementsByName('type');
+                let sh = Array.from(shapes).find(radio => radio.checked);
+
+                let personalize = {};
+                personalize.type = t;
+                personalize.metal = m.value;
+                personalize.stone = s.value;
+                personalize.shape = sh.value;
+                personalize.size = "";
+
+                localStorage.setItem('personalize', JSON.stringify(personalize));
+                localStorage.setItem('ok', '0');
+                location.href = "checkout-en.html";
+            });
+        });
+
+        necklace_btn.addEventListener('click', function(){
+            section1.classList.add('hidden');
+            section2.classList.add('hidden');
+            section3.classList.remove('hidden');
+            section4.classList.add('hidden');
+            window.scrollTo(0, 620);
+
+            document.getElementById('necklace-order').addEventListener('click', function (){
+                let t = 'Necklace';
+
+                let metals = document.getElementsByName('metal');
+                let m = Array.from(metals).find(radio => radio.checked);
+
+                let stones = document.getElementsByName('stone');
+                let s = Array.from(stones).find(radio => radio.checked);
+
+                let shapes = document.getElementsByName('shape');
+                let sh = Array.from(shapes).find(radio => radio.checked);
+
+                let pendants = document.getElementsByName('pendant');
+                let p = Array.from(pendants).find(radio => radio.checked);
+
+                let personalize = {};
+                personalize.type = t;
+                personalize.metal = m.value;
+                personalize.stone = s.value;
+                personalize.shape = sh.value;
+                personalize.size = p.value;
+
+                localStorage.setItem('personalize', JSON.stringify(personalize));
+                localStorage.setItem('ok', '0');
+                location.href = "checkout-en.html";
+            });
+        });
+
+        bracelet_btn.addEventListener('click', function(){
+            section1.classList.add('hidden');
+            section2.classList.add('hidden');
+            section3.classList.add('hidden');
+            section4.classList.remove('hidden');
+            window.scrollTo(0, 620);
+
+            document.getElementById('bracelet-order').addEventListener('click', function (){
+                let t = 'Bracelet';
+
+                let metals = document.getElementsByName('metal');
+                let m = Array.from(metals).find(radio => radio.checked);
+
+                let stones = document.getElementsByName('stone');
+                let s = Array.from(stones).find(radio => radio.checked);
+
+                let shapes = document.getElementsByName('shape');
+                let sh = Array.from(shapes).find(radio => radio.checked);
+
+                let pendants = document.getElementsByName('pendant');
+                let p = Array.from(pendants).find(radio => radio.checked);
+
+                let personalize = {};
+                personalize.type = t;
+                personalize.metal = m.value;
+                personalize.stone = s.value;
+                personalize.shape = sh.value;
+                personalize.size = p.value;
+
+                localStorage.setItem('personalize', JSON.stringify(personalize));
+                localStorage.setItem('ok', '0');
+                location.href = "checkout-en.html";
+            });
+        });
+
+
+    </script>
+</body>
+</html>

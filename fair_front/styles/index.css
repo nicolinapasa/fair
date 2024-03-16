@@ -1,0 +1,315 @@
+.banner{
+    width: 100vw;
+    height: 70vh;
+    background-image: url("assets/img/banner.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.banner div{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.dancing-script{
+    font-family: 'Dancing Script', cursive;
+}
+
+.rufina{
+    font-family: 'Rufina', serif;
+}
+
+.inter{
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.banner .dancing-script{
+    font-size: 2.5rem;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.banner .rufina{
+    font-size: 3.5rem;
+    margin-bottom: 2%;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.banner .btn{
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.banner .btn a{
+    color: #fff;
+}
+
+.banner .btn:hover{
+    background-color: #F1F1F1;
+}
+
+.banner .btn:hover a{
+    color: #703D35;
+}
+
+.whats-new{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F1;
+    animation: fadeIn 1s ease-in;
+}
+
+.whats-new h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.whats-new > div{
+    width: 80%;
+    height: 65%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.whats-new > div > div{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flip-card{
+    width: 350px;
+    height: 200px;
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.flip-card-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(-180deg);
+}
+
+.front-card, .back-card{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}
+
+.front-card{
+    width: 100%;
+    filter: drop-shadow(3px 3px 10px #9f9f9f);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-card:nth-child(1) .front-card{
+    background-image: url(assets/img/ring.svg);
+}
+
+.flip-card:nth-child(2) .front-card{
+    background-image: url(assets/img/ring2.svg);
+}
+
+.flip-card:nth-child(3) .front-card{
+    background-image: url(assets/img/ring3.svg);
+    background-size: 135%;
+    background-position: center center;
+}
+
+.back-card{
+    background-color: #703D35;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(3px 3px 10px #9f9f9f);
+}
+
+.back-card p{
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.front-card p:first-child{
+    color: #703D35;
+    border-bottom: 1px solid #703D35;
+    width: 80%;
+    margin-bottom: 4%;
+    margin-top: 5%;
+    padding-bottom: 4%;
+    font-family: 'Rufina', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.front-card p:nth-child(2){
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.front-card p:nth-child(3){
+    font-family: 'Rufina', serif;
+    font-weight: 500;
+    margin-top: 90%;
+}
+
+
+.home-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 270vh;
+    width: 100vw;
+    background-color: #F1F1F1;
+    padding-bottom: 3%;
+    animation: fadeIn 1s ease-in;
+}
+
+.home-page-container h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home-page-container .box{
+    height: 50vh;
+    width: 60vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.home-page-container .box .image{
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-page-container .box .image:hover{
+    box-shadow: 1px 1px 20px gray;
+    transition: 0.5s ease-in-out;
+}
+
+.home-page-container .box:nth-child(2) .image{
+    background-image: url(assets/img/home-ring.svg);
+}
+
+.home-page-container .box:nth-child(3) .image{
+    background-image: url(assets/img/home-necklace.svg);
+}
+
+.home-page-container .box:nth-child(4) .image{
+    background-image: url(assets/img/home-bracelet.svg);
+}
+
+.home-page-container .box:nth-child(5) .image{
+    background-image: url(assets/img/home-earring.svg);
+}
+
+.home-page-container .box .description{
+    width: 30%;
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    background-color: #F1F1F1;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.home-page-container .box .description:hover{
+    box-shadow: 1px 1px 20px gray;
+    transition: 0.5s;
+}
+
+.home-page-container .box:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.home-page-container .box:nth-child(even) .description{
+    left: 49%;
+}
+
+.home-page-container .box:nth-child(odd) .description{
+    right: 49%;
+}
+
+.home-page-container .box .description p{
+    font-size: 1.6rem;
+    margin-bottom: 4%;
+    font-weight: 500;
+    margin-left: 3vw;
+}
+
+.home-page-container .box .description .btn{
+    color: black;
+    border: 1px solid black;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 3vw;
+}
+
+

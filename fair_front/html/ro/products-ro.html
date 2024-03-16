@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&family=Patrick+Hand+SC&family=Poppins:wght@400;500;600;700;800;900&family=Rufina:wght@400;700&family=Zilla+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>FAIR</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="icon" href="assets/img/diamond.png">
+    <script src="https://kit.fontawesome.com/749e66c4a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="pre-header">
+            <div class="languages">
+                <a href="products-ro.html">RO</a>
+                <div class="vertical-line"></div>
+                <a href="../en/products-en.html">EN</a>
+            </div>
+            <div class="log-sgnup">
+                <a href="login-ro.html">Login</a>
+                <div class="vertical-line"></div>
+                <a href="sign-up-ro.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="header">
+            <a href="index-ro.html" class="logo">FAIR</a>
+            <ul class="menu">
+                <li><a href="products-ro.html">PRODUSE</a></li>
+                <li><a href="about-us-ro.html">DESPRE NOI</a></li>
+                <li><a href="personalize-ro.html">PERSONALIZEAZĂ</a></li>
+                <li><a href="contacts-ro.html">CONTACTE</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="icon" id="fav-button"><img src="assets/img/heart.png" alt="fav"></div>
+                <div class="icon" id="cart-button"><img src="assets/img/shopping-bag.png" alt="cart"></div>
+                <a href="profile-ro.html" class="icon"><img src="assets/img/user.png" alt="profile"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="products-container">
+        <div class="slider">
+            <div class="slides">
+                <img src="assets/img/slider1.svg">
+                <img src="assets/img/slider2.svg">
+                <img src="assets/img/slider3.svg">
+                <img src="assets/img/slider4.svg">
+                <img src="assets/img/slider5.svg">
+            </div>
+            <div class="dots"></div>
+        </div>
+    </section>
+
+    <section class="products-container">
+        <p>PRODUSE</p>
+        <div class="select-box">
+            <select name="" id="page-nmb">
+                <option value="0" selected>Arată toate produsele</option>
+                <option value="3">Arată 3 produse</option>
+                <option value="6">Arată 6 produse</option>
+                <option value="9">Arată 9 produse</option>
+                <option value="12">Arată 12 produse</option>
+            </select>
+        </div>
+
+        <div class="prod-box"></div>
+        <div class="pages"></div>
+    </section>
+
+    <footer>
+        <ul class="menu">
+            <li><a href="products-ro.html">PRODUSE</a></li>
+            <li><a href="about-us-ro.html">DESPRE NOI</a></li>
+            <li><a href="personalize-ro.html">PERSONALIZEAZĂ</a></li>
+            <li><a href="contacts-ro.html">CONTACTE</a></li>
+        </ul>
+        <p>Contactează-ne prin email cu solicitarea ta și vom lucra cu tine în privat pentru a găsi ceea ce cauți! Puteți stabili o programare la biroul nostru sau o întâlnire interactivă prin FaceTime. Ne-ar face plăcere să vă ajutăm să găsiți bijuteriile visurilor dvs.</p>
+        <label for="email">
+            <input type="text" id="email-box" placeholder="Introduce-ți email">
+            <img src="assets/img/email.png" alt="submit" id="email-submit">
+        </label>
+        <p class="copyrights">&#169 2023 Fair Jewelry Store. Toate drepturile rezervate.</p>
+    </footer>
+
+    <div id="big-shopping-cart">
+        <div>
+            <p>Coș</p>
+            <button id="cart-close-button">+</button>
+        </div>
+        <div id="shopping-cart">
+            <p>Până când nu aveți nimic în coș.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="favourites">
+        <div>
+            <p>Articole preferate</p>
+            <button id="fav-close-button">+</button>
+        </div>
+        <div id="fav">
+            <p>Până când nu aveți nimic în preferate.</p>
+        </div>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelector('.slides');
+        const slideWidth = slider.offsetWidth;
+        let currentSlide = 0;
+        const dotsContainer = document.querySelector('.dots');
+        const slidesLength = slides.childElementCount;
+
+        function goToSlide(index) {
+            slides.style.transform = `translateX(-${slideWidth * index}px)`;
+            currentSlide = index;
+            updateDots();
+        }
+
+        function nextSlide() {
+            if (currentSlide === slidesLength - 1) {
+                goToSlide(0);
+            } else {
+                goToSlide(currentSlide + 1);
+            }
+        }
+
+        function createDots() {
+            for (let i = 0; i < slidesLength; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                dot.addEventListener('click', function () {
+                    goToSlide(i);
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateDots() {
+            const dots = dotsContainer.children;
+            for (let i = 0; i < dots.length; i++) {
+                if (i === currentSlide) {
+                    dots[i].classList.add('active');
+                } else {
+                    dots[i].classList.remove('active');
+                }
+            }
+        }
+
+        createDots();
+        updateDots();
+        setInterval(nextSlide, 4000);
+
+
+        window.addEventListener('DOMContentLoaded', () => {
+            fetch('assets/js/productsro.json')
+            .then(response => response.json())
+            .then(data => {
+                let page_select = document.getElementById('page-nmb');
+                let pbox = document.querySelector('.prod-box');
+                let pages = document.querySelector('.pages');
+                let total_price = 0;
+                localStorage.setItem('tprice', total_price);
+                pbox.innerHTML = "";
+                const products = data.productsro;
+                function displayALL(x, y){
+                    for(let i = x; i < y; i++){
+                        let div = document.createElement('div');
+                        pbox.appendChild(div);
+                        div.classList.add('product-box');
+                        let image_box = document.createElement('div');
+                        image_box.classList.add('image-box');
+                        let name = document.createElement('p');
+                        let price = document.createElement('p');
+                        div.appendChild(image_box);
+                        div.appendChild(name);
+                        if(products[i].type == "Ring"){
+                            let p = document.createElement('p');
+                            p.innerHTML = 'SIZE';
+                            p.classList.add('size');
+                            let sizes = document.createElement('div');
+                            for(let a = 15; a <= 20; a++){
+                                let label = document.createElement("label");
+                                label.innerText = a;
+                                let input = document.createElement("input");
+                                input.type = "radio";
+                                input.name = 'size';
+                                label.appendChild(input);
+                                sizes.appendChild(label);
+                            }
+                            div.appendChild(p);
+                            div.appendChild(sizes);
+                            sizes.classList.add('sizes');
+                        }
+                        div.appendChild(price);
+                        name.classList.add('prod-name');
+                        price.classList.add('price');
+                        name.innerHTML = "FAIR " + products[i].type + " " + products[i].stone + " " + products[i].shape + " " + products[i].metal;
+                        image_box.style.backgroundImage = 'url('+products[i].img+')';
+                        price.innerHTML = products[i].price + "$";
+
+                        let btn = document.createElement('button');
+                        div.appendChild(btn);
+                        btn.classList.add('btn');
+                        btn.innerHTML = 'ADAUGĂ ÎN COȘ';
+                        btn.onclick = function aaa(){
+                            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                            let products_container = document.getElementById('shopping-cart');
+                            let pr = products[i];
+                            cart.push(pr);
+                            localStorage.setItem('cart', JSON.stringify(cart));
+                            location.reload();
+                        }
+
+                        let f = document.createElement('button');
+                        f.classList.add('fav-button');
+                        div.appendChild(f);
+                        f.innerHTML = '<i class="fa-regular fa-heart"></i>'
+                        f.onclick = function a(){
+                            let favs = JSON.parse(localStorage.getItem('favs')) || [];
+                            let fav_container = document.getElementById('fav');
+                            let fr = products[i];
+                            favs.push(fr);
+                            localStorage.setItem('favs', JSON.stringify(favs));
+                            location.reload();
+                        }
+                    }
+                }
+
+
+                function display(x, y, z){
+
+                }
+
+                let number = page_select.value;
+                let tpages = Math.ceil(products.length / number);
+
+
+                if(number == 0){
+                    displayALL(0, products.length);
+                }
+
+                page_select.addEventListener('change', function paging(){
+                    let number = page_select.value;
+                    let tpages = Math.ceil(products.length / number);
+                    let pages = document.querySelector('.pages');
+                    pages.replaceChildren();
+                    if(number == 0){
+                        displayALL(0, products.length);
+                    }
+                    else{
+                        for(let i = 1; i <= tpages; i++){
+                            let div = document.createElement('button');
+                            pages.appendChild(div);
+                            div.innerHTML = i;
+                            div.classList.add('page-number-button');
+                            div.setAttribute("id", i)
+                        }
+
+                        let pbox = document.querySelector('.prod-box');
+                        pbox.innerHTML = "";
+                        displayALL(0, number);
+                        for(let pageIndex = 1; pageIndex <= tpages; pageIndex++){
+                            let index = document.getElementById(pageIndex);
+                            if(pageIndex == tpages){
+                                index.addEventListener('click', function da(){
+                                    window.scrollTo({top: 600, behavior: 'smooth'});
+                                    let pbox = document.querySelector('.prod-box');
+                                    pbox.innerHTML = "";
+                                    display((tpages-1)*number,products.length);
+                                })
+                            }
+                            else{
+                                index.addEventListener('click', function da(){
+                                    window.scrollTo({top: 600, behavior: 'smooth'});
+                                    let pbox = document.querySelector('.prod-box');
+                                    pbox.innerHTML = "";
+                                    for(let i = (pageIndex-1)*number; i < (pageIndex*number); i++){
+                                        if(pageIndex == tpages){
+                                            break;
+                                            ok = 0;
+                                        }
+
+                                        let div = document.createElement('div');
+                                        pbox.appendChild(div);
+                                        div.classList.add('product-box');
+                                        let image_box = document.createElement('div');
+                                        image_box.classList.add('image-box');
+                                        let name = document.createElement('p');
+                                        let price = document.createElement('p');
+                                        div.appendChild(image_box);
+                                        div.appendChild(name);
+                                        if(products[i].type == "Ring"){
+                                            let p = document.createElement('p');
+                                            p.innerHTML = 'SIZE';
+                                            p.classList.add('size');
+                                            let sizes = document.createElement('div');
+                                            for(let a = 15; a <= 20; a++){
+                                                let label = document.createElement("label");
+                                                label.innerText = a;
+                                                let input = document.createElement("input");
+                                                input.type = "radio";
+                                                input.name = 'size';
+                                                label.appendChild(input);
+                                                sizes.appendChild(label);
+                                            }
+                                            div.appendChild(p);
+                                            div.appendChild(sizes);
+                                            sizes.classList.add('sizes');
+                                        }
+                                        div.appendChild(price);
+                                        name.classList.add('prod-name');
+                                        price.classList.add('price');
+                                        name.innerHTML = "FAIR " + products[i].type + " " + products[i].stone + " " + products[i].shape + " " + products[i].metal;
+                                        image_box.style.backgroundImage = 'url('+products[i].img+')';
+                                        price.innerHTML = products[i].price + "$";
+
+                                        let btn = document.createElement('button');
+                                        div.appendChild(btn);
+                                        btn.classList.add('btn');
+                                        btn.innerHTML = 'ADAUGĂ ÎN COȘ';
+                                        btn.onclick = function aaa(){
+                                            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                                            let products_container = document.getElementById('shopping-cart');
+                                            let pr = products[i];
+                                            cart.push(pr);
+                                            localStorage.setItem('cart', JSON.stringify(cart));
+                                            location.reload();
+                                        }
+
+                                        let f = document.createElement('button');
+                                        f.classList.add('fav-button');
+                                        f.innerHTML = '<i class="fa-regular fa-heart"></i>'
+                                        div.appendChild(f);
+                                        f.onclick = function a(){
+                                            let favs = JSON.parse(localStorage.getItem('cart')) || [];
+                                            let fav_container = document.getElementById('fav');
+                                            let fr = products[i];
+                                            favs.push(fr);
+                                            localStorage.setItem('favs', JSON.stringify(favs));
+                                            location.reload();
+                                        }
+                                    }
+                                })
+                            }
+                        }
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>

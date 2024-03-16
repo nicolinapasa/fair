@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&family=Patrick+Hand+SC&family=Poppins:wght@400;500;600;700;800;900&family=Rufina:wght@400;700&family=Zilla+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>FAIR</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/log-sign.css">
+    <link rel="icon" href="assets/img/diamond.png">
+</head>
+<body>
+    <header>
+        <div class="pre-header">
+            <div class="languages">
+                <a href="login-ro.html">RO</a>
+                <div class="vertical-line"></div>
+                <a href="../en/login-en.html">EN</a>
+            </div>
+            <div class="log-sgnup">
+                <a href="login-ro.html">Login</a>
+                <div class="vertical-line"></div>
+                <a href="sign-up-ro.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="header">
+            <a href="index-ro.html" class="logo">FAIR</a>
+            <ul class="menu">
+                <li><a href="products-ro.html">PRODUSE</a></li>
+                <li><a href="about-us-ro.html">DESPRE NOI</a></li>
+                <li><a href="personalize-ro.html">PERSONALIZEAZĂ</a></li>
+                <li><a href="contacts-ro.html">CONTACTE</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="icon" id="fav-button"><img src="assets/img/heart.png" alt="fav"></div>
+                <div class="icon" id="cart-button"><img src="assets/img/shopping-bag.png" alt="cart"></div>
+                <a href="profile-ro.html" class="icon"><img src="assets/img/user.png" alt="profile"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="login-container">
+        <p>LOGIN</p>
+        <input type="email" placeholder="Email" id="email" required>
+        <input type="password" placeholder="Password" id="password" required>
+        <button class="btn" onclick="login()">CONECTEAZĂ-TE</button>
+        <a href="sign-up-ro.html">CREAZĂ ACCOUNT</a>
+    </section>
+
+    <footer>
+        <ul class="menu">
+            <li><a href="products-ro.html">PRODUSE</a></li>
+            <li><a href="about-us-ro.html">DESPRE NOI</a></li>
+            <li><a href="personalize-ro.html">PERSONALIZEAZĂ</a></li>
+            <li><a href="contacts-ro.html">CONTACTE</a></li>
+        </ul>
+        <p>Contactează-ne prin email cu solicitarea ta și vom lucra cu tine în privat pentru a găsi ceea ce cauți! Puteți stabili o programare la biroul nostru sau o întâlnire interactivă prin FaceTime. Ne-ar face plăcere să vă ajutăm să găsiți bijuteriile visurilor dvs.</p>
+        <label for="email">
+            <input type="text" id="email-box" placeholder="Introduce-ți email">
+            <img src="assets/img/email.png" alt="submit" id="email-submit">
+        </label>
+        <p class="copyrights">&#169 2023 Fair Jewelry Store. Toate drepturile rezervate.</p>
+    </footer>
+
+    <div id="big-shopping-cart">
+        <div>
+            <p>Coș</p>
+            <button id="cart-close-button">+</button>
+        </div>
+        <div id="shopping-cart">Până când nu aveți nimic în coș.</div>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="favourites">
+        <div>
+            <p>Articole preferate</p>
+            <button id="fav-close-button">+</button>
+        </div>
+        <div id="fav">Până când nu aveți nimic în preferate.</div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/login-ro.js"></script>
+</body>
+</html>

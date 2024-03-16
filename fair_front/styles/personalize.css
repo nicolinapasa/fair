@@ -1,0 +1,270 @@
+.personalize-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12vh;
+    background-color: #F1F1F1;
+    padding: 7vh 0;
+}
+
+.personalize-container > p:first-child{
+    font-family: 'Rufina', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+
+
+.personalize-container > div{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.personalize-container > p:nth-child(2){
+    font-family: 'Inter', sans-serif;
+    width: 60%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 7vh;
+}
+
+.personalize-container > div > button{
+    border: none;
+    width: 270px;
+    height: 50vh;
+    filter: drop-shadow(3px 3px 10px #9f9f9f);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+
+.personalize-container button:hover{
+    cursor: pointer;
+}
+
+.personalize-container > div > button p{
+    color: #703D35;
+    border-bottom: 1px solid #703D35;
+    width: 70%;
+    margin-bottom: 4%;
+    padding: 4%;
+    font-family: 'Rufina', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.personalize-container > div > button > div{
+    width: 60%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+
+.personalize-container > div >  button:nth-child(1) > div{
+    background-image: url("assets/img/products-ring.svg");
+}
+
+.personalize-container > div >  button:nth-child(2) > div{
+    background-image: url("assets/img/products-earring.svg");
+}
+
+.personalize-container > div > button:nth-child(3) > div{
+    background-image: url("assets/img/products-necklace.svg");
+}
+
+.personalize-container > div > button:nth-child(4) > div{
+    background-image: url("assets/img/products-bracelet.svg");
+}
+
+.personalize-container div span{
+    width: 100%;
+    height: 14%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.personalize-container span:hover{
+    background-color: #703D35;
+    color: white;
+}
+
+.personalize-section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1F1F1;
+    padding: 5vh 0;
+}
+
+.personalize-section > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personalize-section > div > p{
+    font-family: 'Rufina', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 4vh;
+}
+
+.personalize-section > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    margin: 3vh 0;
+}
+
+.personalize-section > div > div p{
+    font-weight: 600;
+    margin-bottom: 3vh;
+    font-size: 1.1rem;
+}
+
+.personalize-section > div > div  label{
+    margin: 0 1vw;
+    font-weight: 500;
+}
+
+.personalize-section input[type="radio"] {
+    display: none;
+}
+
+.personalize-section input[type="radio"] + label {
+    position: relative;
+    padding-left: 2vw;
+    cursor: pointer;
+}
+
+.personalize-section input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.personalize-section input[type="radio"].gold + label:before{
+    background-color: gold;
+}
+
+.personalize-section input[type="radio"].silver + label:before{
+    background-color: silver;
+}
+
+.personalize-section input[type="radio"].rose-gold + label:before{
+    background-color: rgb(231, 177, 150);
+}
+
+.personalize-section input[type="radio"]:checked + label:before {
+    border: none;
+    border: 3px solid #703D35;
+}
+
+.personalize-section input[type="radio"].no + label:before{
+    background-image: url(assets/img/Unavailable.svg);
+}
+
+.personalize-section input[type="radio"].heart + label:before{
+    background-image: url(assets/img/heart-pendant.jpg);
+}
+
+.personalize-section input[type="radio"].cross + label:before{
+    background-image: url(assets/img/cross-pendant.jpg);
+}
+
+.personalize-section input[type="radio"].diamond + label:before{
+    background-image: url(assets/img/Diamond.svg);
+}
+
+.personalize-section input[type="radio"].amethyst + label:before{
+    background-image: url(assets/img/amethyst.svg);
+}
+
+
+.personalize-section input[type="radio"].sapphire + label:before{
+    background-image: url(assets/img/sapphire.svg);
+}
+
+.personalize-section input[type="radio"].ruby + label:before{
+    background-image: url(assets/img/ruby.svg);
+}
+
+.personalize-section input[type="radio"].pearl + label:before{
+    background-image: url(assets/img/pearl.svg);
+}
+
+.personalize-section .stone-types input[type="radio"] + label:before{
+    width: 5vh;
+    height: 5vh;
+}
+
+.personalize-section .stone-types input[type="radio"] + label{
+    padding-left: 3vw;
+}
+
+.personalize-section input[type="radio"].pear + label:before{
+    background-image: url(assets/img/pear.svg);
+}
+
+.personalize-section input[type="radio"].cushion + label:before{
+    background-image: url(assets/img/cushion.svg);
+}
+
+.personalize-section input[type="radio"].oval + label:before{
+    background-image: url(assets/img/oval.svg);
+}
+
+.personalize-section input[type="radio"].round + label:before{
+    background-image: url(assets/img/round.svg);
+}
+
+.personalize-section input[type="radio"].elongated + label:before{
+    background-image: url(assets/img/elongated.svg);
+}
+
+.personalize-section .sizes input[type="radio"] + label{
+    padding-left: 3vw;
+}
+
+.personalize-section button{
+    color: white;
+    background: #703D35;
+    margin: 4vh 0;
+}
+
+.personalize-section input[type="radio"]#stud + label:before{
+    background-image: url(assets/img/stud.jpg);
+}
+
+.personalize-section input[type="radio"]#drop + label:before{
+    background-image: url(assets/img/drop.jpg);
+}
+
+.personalize-section input[type="radio"]#hoop + label:before{
+    background-image: url(assets/img/hoop.jpg);
+}

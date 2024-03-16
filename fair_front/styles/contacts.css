@@ -1,0 +1,83 @@
+.contacts-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12vh;
+    background-color: #F1F1F1;
+}
+
+.contacts-container > div{
+    width: 70%;
+    border-bottom: 1px solid #000;
+}
+
+.contacts-container > div:first-child{
+    height: 50vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacts-container > div p{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+}
+
+.contacts-container > div > p:first-child{
+    font-family: 'Rufina', serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contacts-container label{
+    border-bottom: 1px solid #000;
+    width: 30%;
+    color: black;
+}
+
+.contacts-container #email-box{
+    color: black;
+}
+
+.contacts-container #email-box::placeholder{
+    color: #000;
+}
+
+.contacts-container > div:nth-child(2){
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vh 0;
+}
+
+.contacts-container > div:nth-child(2) > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.contacts-container > div:nth-child(3){
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vh 0;
+    margin: 2vh;
+    border: none;
+}
+
+.contacts-container > div:nth-child(3) img{
+    width: 3vw;
+}

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&family=Patrick+Hand+SC&family=Poppins:wght@400;500;600;700;800;900&family=Rufina:wght@400;700&family=Zilla+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>FAIR</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/personalize.css">
+    <link rel="icon" href="assets/img/diamond.png">
+</head>
+<body>
+    <header>
+        <div class="pre-header">
+            <div class="languages">
+                <a href="personalize-ro.html">RO</a>
+                <div class="vertical-line"></div>
+                <a href="../en/personalize-en.html">EN</a>
+            </div>
+            <div class="log-sgnup">
+                <a href="login-ro.html">Login</a>
+                <div class="vertical-line"></div>
+                <a href="sign-up-ro.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="header">
+            <a href="index-ro.html" class="logo">FAIR</a>
+            <ul class="menu">
+                <li><a href="products-ro.html">PRODUSE</a></li>
+                <li><a href="about-us-ro.html">DESPRE NOI</a></li>
+                <li><a href="personalize-ro.html">PERSONALIZEAZĂ</a></li>
+                <li><a href="contacts-ro.html">CONTACTE</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="icon" id="fav-button"><img src="assets/img/heart.png" alt="fav"></div>
+                <div class="icon" id="cart-button"><img src="assets/img/shopping-bag.png" alt="cart"></div>
+                <a href="profile-ro.html" class="icon"><img src="assets/img/user.png" alt="profile"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="personalize-container">
+        <p>CREAȚI-VĂ PROPRIILE DESIGNE DE BIJUTERII</p>
+        <p>De la inele de logodnă personalizate la coliere cu plăcuțe de identificare și tot ce există între ele, creați logodna personalizate și stiluri de bijuterii personalizate care vorbesc cu stilul lor personal.</p>
+        <div>
+            <button id="ring-btn">
+                <p>INELE PERSONALIZATE</p>
+                <div>
+                    <span>PERSONALIZEAZĂ</span>
+                </div>
+            </button>
+            <button id="earrings-btn">
+                <p>CERCEI PERSONALIZAȚI</p>
+                <div>
+                    <span>PERSONALIZEAZĂ</span>
+                </div>
+            </button>
+            <button id="necklace-btn">
+                <p>COLIER PERSONALIZAT</p>
+                <div>
+                    <span>PERSONALIZEAZĂ</span>
+                </div>
+            </button>
+            <button id="bracelet-btn">
+                <p>BRĂȚARĂ PERSONALIZATĂ</p>
+                <div>
+                    <span>PERSONALIZEAZĂ</span>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <section class="personalize-section">
+        <div class="pers-ring hidden">
+            <p>FĂ UN INEL PERSONALIZAT</p>
+            <div>
+                <p>Tipul Metalului</p>
+                <div>
+                    <input type="radio" name="metal" id="silver" class="silver" value="Argint">
+                    <label for="silver">ARGINT</label>
+
+                    <input type="radio" name="metal" id="gold" class="gold" value="Aur">
+                    <label for="gold">AUR</label>
+
+                    <input type="radio" name="metal" id="rose-gold" class="rose-gold" value="Aur-Roz">
+                    <label for="rose-gold">AUR ROZ</label>
+                </div>
+            </div>
+            <div>
+                <p>Tipul Pietrei</p>
+                <div class="stone-types">
+                    <input type="radio" name="stone" id="no-stone" class="no" value="">
+                    <label for="no-stone">Fără piatră</label>
+
+                    <input type="radio" name="stone" id="diamond" class="diamond" value="Diamant">
+                    <label for="diamond">Diamant</label>
+
+                    <input type="radio" name="stone" id="amethyst" class="amethyst" value="Ametist">
+                    <label for="amethyst">Ametist</label>
+
+                    <input type="radio" name="stone" id="sapphire" class="sapphire" value="Safir">
+                    <label for="sapphire">Safir</label>
+
+                    <input type="radio" name="stone" id="ruby" class="ruby" value="Rubin">
+                    <label for="ruby">Rubin</label>
+
+                    <input type="radio" name="stone" id="pearl" class="pearl" value="Perle">
+                    <label for="pearl">Perlă</label>
+                </div>
+            </div>
+            <div>
+                <p>Forma Pietrei</p>
+                <div class="stone-types">
+                    <input type="radio" name="shape" id="no-shape" class="no" value="no">
+                    <label for="no-shape">Fără formă</label>
+
+                    <input type="radio" name="shape" id="pear" class="pear" value="Pară">
+                    <label for="pear">Pară</label>
+
+                    <input type="radio" name="shape" id="cushion" class="cushion" value="Cushion">
+                    <label for="cushion">Cushion</label>
+
+                    <input type="radio" name="shape" id="oval" class="oval" value="Oval">
+                    <label for="oval">Ovală</label>
+
+                    <input type="radio" name="shape" id="round" class="round" value="Rotund">
+                    <label for="round">Roundă</label>
+
+                    <input type="radio" name="shape" id="elongated" class="elongated" value="Lung">
+                    <label for="elongated">Lungă</label>
+                </div>
+            </div>
+
+            <div>
+                <p>Mărimea</p>
+                <div class="sizes">
+                    <input type="radio" name="size" id="5" value="5">
+                    <label for="5">5</label>
+
+                    <input type="radio" name="size" id="6" value="6">
+                    <label for="6">6</label>
+
+                    <input type="radio" name="size" id="7" value="7">
+                    <label for="7">7</label>
+
+                    <input type="radio" name="size" id="8" value="8">
+                    <label for="8">8</label>
+
+                    <input type="radio" name="size" id="9" value="9">
+                    <label for="9">9</label>
+
+                    <input type="radio" name="size" id="10" value="10">
+                    <label for="10">10</label>
+
+                    <input type="radio" name="size" id="11" value="11">
+                    <label for="11">11</label>
+
+                    <input type="radio" name="size" id="12" value="12">
+                    <label for="12">12</label>
+                </div>
+            </div>
+            <button class="btn" id="ring-order">COMANDĂ</button>
+        </div>
+
+        <div class="pers-earrings hidden">
+            <p>FĂ CERCEI PERSONALIZAȚI</p>
+            <div>
+                <p>Tipul Metalului</p>
+                <div>
+                    <input type="radio" name="metal" id="silver-earring" class="silver" value="Argint">
+                    <label for="silver-earring">ARGINT</label>
+
+                    <input type="radio" name="metal" id="gold-earring" class="gold" value="Aur">
+                    <label for="gold-earring">AUR</label>
+
+                    <input type="radio" name="metal" id="rose-gold-earring" class="rose-gold" value="Aur-Roz">
+                    <label for="rose-gold-earring">AUR ROZ</label>
+                </div>
+            </div>
+            <div>
+                <p>Tipul</p>
+                <div class="stone-types">
+                    <input type="radio" name="type" id="stud" value="Stud">
+                    <label for="stud">Stud</label>
+
+                    <input type="radio" name="type" id="drop" value="Picături">
+                    <label for="drop">Picături</label>
+
+                    <input type="radio" name="type" id="hoop" value="Inel">
+                    <label for="hoop">Inel</label>
+                </div>
+            </div>
+            <div>
+                <p>Tipul Pietrei</p>
+                <div class="stone-types">
+                    <input type="radio" name="stone" id="no-stone-earring" class="no" value="">
+                    <label for="no-stone-earring">Fără piatră</label>
+
+                    <input type="radio" name="stone" id="diamond-earring" class="diamond" value="Diamant">
+                    <label for="diamond-earring">Diamant</label>
+
+                    <input type="radio" name="stone" id="pearl-earring" class="pearl" value="Perle">
+                    <label for="pearl-earring">Perlă</label>
+                </div>
+            </div>
+            <button class="btn" id="earrings-order">COMANDĂ</button>
+        </div>
+        <div class="pers-necklace hidden">
+            <p>FĂ UN COLIER PERSONALIZAT</p>
+            <div>
+                <p>Tipul Metalului</p>
+                <div>
+                    <input type="radio" name="metal" id="silver-necklace" class="silver" value="Argint">
+                    <label for="silver-necklace">ARGINT</label>
+
+                    <input type="radio" name="metal" id="gold-necklace" class="gold" value="Aur">
+                    <label for="gold-necklace">AUR</label>
+
+                    <input type="radio" name="metal" id="rose-gold-necklace" class="rose-gold" value="Aur-Roz">
+                    <label for="rose-gold-necklace">AUR ROZ</label>
+                </div>
+            </div>
+            <div>
+                <p>Pendant</p>
+                <div class="stone-types">
+                    <input type="radio" name="pendant" id="no-pendant" class="no" value="">
+                    <label for="no-pendant">Fără pendant</label>
+
+                    <input type="radio" name="pendant" id="heart" class="heart" value="Inimă">
+                    <label for="heart">Inimă</label>
+
+                    <input type="radio" name="pendant" id="cross" class="cross" value="Cruce">
+                    <label for="cross">Cruce</label>
+                </div>
+            </div>
+            <div>
+                <p>Tipul Pietrei</p>
+                <div class="stone-types">
+                    <input type="radio" name="stone" id="no-stone-necklace" class="no" value="">
+                    <label for="no-stone-necklace">Fără Piatră</label>
+
+                    <input type="radio" name="stone" id="diamond-necklace" class="diamond" value="Diamant">
+                    <label for="diamond-necklace">Diamant</label>
+
+                    <input type="radio" name="stone" id="amethyst-necklace" class="amethyst" value="Ametist">
+                    <label for="amethyst-necklace">Ametist</label>
+
+                    <input type="radio" name="stone" id="sapphire-necklace" class="sapphire" value="Safir">
+                    <label for="sapphire-necklace">Safir</label>
+
+                    <input type="radio" name="stone" id="ruby-necklace" class="ruby" value="Rubin">
+                    <label for="ruby-necklace">Rubin</label>
+
+                    <input type="radio" name="stone" id="pearl-necklace" class="pearl" value="Perle">
+                    <label for="pearl-necklace">Perlă</label>
+                </div>
+            </div>
+            <div>
+                <p>Forma Pietrei</p>
+                <div class="stone-types">
+                    <input type="radio" name="shape" id="no-shape-necklace" class="no" value="">
+                    <label for="no-shape-necklace">Fără Formă</label>
+
+                    <input type="radio" name="shape" id="pear-necklace" class="pear" value="Pară">
+                    <label for="pear-necklace">Pară</label>
+
+                    <input type="radio" name="shape" id="cushion-necklace" class="cushion" value="Cushion">
+                    <label for="cushion-necklace">Cushion</label>
+
+                    <input type="radio" name="shape" id="oval-necklace" class="oval" value="Oval">
+                    <label for="oval-necklace">Ovală</label>
+
+                    <input type="radio" name="shape" id="round-necklace" class="round" value="Rotund">
+                    <label for="round-necklace">Rotundă</label>
+
+                    <input type="radio" name="shape" id="elongated-necklace" class="elongated" value="Lung">
+                    <label for="elongated-necklace">Lungă</label>
+                </div>
+            </div>
+            <button class="btn" id="necklace-order">COMANDĂ</button>
+        </div>
+        <div class="pers-bracelet hidden">
+            <p>FĂ O BRĂȚARĂ PERSONALIZATĂ</p>
+            <div>
+                <p>Tipul Metalului</p>
+                <div>
+                    <input type="radio" name="metal" id="silver-bracelet" class="silver" value="Argint">
+                    <label for="silver-bracelet">ARGINT</label>
+
+                    <input type="radio" name="metal" id="gold-bracelet" class="gold" value="Aur">
+                    <label for="gold-bracelet">AUR</label>
+
+                    <input type="radio" name="metal" id="rose-gold-bracelet" class="rose-gold" value="Aur-Roz">
+                    <label for="rose-gold-bracelet">AUR ROZ</label>
+                </div>
+            </div>
+            <div>
+                <p>Pendant</p>
+                <div class="stone-types">
+                    <input type="radio" name="pendant" id="no-pendant-bracelet" class="no" value="">
+                    <label for="no-pendant-bracelet">Fără pendant</label>
+
+                    <input type="radio" name="pendant" id="heart-bracelet" class="heart" value="Inimă">
+                    <label for="heart-bracelet">Inimă</label>
+
+                    <input type="radio" name="pendant" id="cross-bracelet" class="cross" value="Cruce">
+                    <label for="cross-bracelet">Cruce</label>
+                </div>
+            </div>
+            <div>
+                <p>Tipul Pietrei</p>
+                <div class="stone-types">
+                    <input type="radio" name="stone" id="no-stone-bracelet" class="no" value="">
+                    <label for="no-stone-bracelet">Fără Piatră</label>
+
+                    <input type="radio" name="stone" id="diamond-bracelet" class="diamond" value="Diamant">
+                    <label for="diamond-bracelet">Diamant</label>
+
+                    <input type="radio" name="stone" id="amethyst-bracelet" class="amethyst" value="Ametist">
+                    <label for="amethyst-bracelet">Ametist</label>
+
+                    <input type="radio" name="stone" id="sapphire-bracelet" class="sapphire" value="Safir">
+                    <label for="sapphire-bracelet">Safir</label>
+
+                    <input type="radio" name="stone" id="ruby-bracelet" class="ruby" value="Rubin">
+                    <label for="ruby-bracelet">Rubin</label>
+
+                    <input type="radio" name="stone" id="pearl-bracelet" class="pearl" value="Perle">
+                    <label for="pearl-bracelet">Perlă</label>
+                </div>
+            </div>
+            <div>
+                <p>Forma Pietrei</p>
+                <div class="stone-types">
+                    <input type="radio" name="shape" id="no-shape-bracelet" class="no" value="">
+                    <label for="no-shape-bracelet">Fără formă</label>
+
+                    <input type="radio" name="shape" id="pear-bracelet" class="pear" value="Pară">
+                    <label for="pear-bracelet">Pară</label>
+
+                    <input type="radio" name="shape" id="cushion-bracelet" class="cushion" value="Cushion">
+                    <label for="cushion-bracelet">Cushion</label>
+
+                    <input type="radio" name="shape" id="oval-bracelet" class="oval" value="Oval">
+                    <label for="oval-bracelet">Ovală</label>
+
+                    <input type="radio" name="shape" id="round-bracelet" class="round" value="Rotund">
+                    <label for="round-bracelet">Rotundă</label>
+
+                    <input type="radio" name="shape" id="elongated-bracelet" class="elongated" value="Lung">
+                    <label for="elongated-bracelet">Lung</label>
+                </div>
+            </div>
+            <button class="btn" id="bracelet-order">COMANDĂ</button>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="menu">
+            <li><a href="products-ro.html">PRODUSE</a></li>
+            <li><a href="about-us-ro.html">DESPRE NOI</a></li>
+            <li><a href="personalize-ro.html">PERSONALIZEAZĂ</a></li>
+            <li><a href="contacts-ro.html">CONTACTE</a></li>
+        </ul>
+        <p>Contactează-ne prin email cu solicitarea ta și vom lucra cu tine în privat pentru a găsi ceea ce cauți! Puteți stabili o programare la biroul nostru sau o întâlnire interactivă prin FaceTime. Ne-ar face plăcere să vă ajutăm să găsiți bijuteriile visurilor dvs.</p>
+        <label for="email">
+            <input type="text" id="email-box" placeholder="Introduce-ți email">
+            <img src="assets/img/email.png" alt="submit" id="email-submit">
+        </label>
+        <p class="copyrights">&#169 2023 Fair Jewelry Store. Toate drepturile rezervate.</p>
+    </footer>
+
+    <div id="big-shopping-cart">
+        <div>
+            <p>Coș</p>
+            <button id="cart-close-button">+</button>
+        </div>
+        <div id="shopping-cart">Până când nu aveți nimic în coș.</div>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="favourites">
+        <div>
+            <p>Articole preferate</p>
+            <button id="fav-close-button">+</button>
+        </div>
+        <div id="fav">Până când nu aveți nimic în preferate.</div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        let ring_btn = document.getElementById('ring-btn');
+        let earrings_btn = document.getElementById('earrings-btn');
+        let necklace_btn = document.getElementById('necklace-btn');
+        let bracelet_btn = document.getElementById('bracelet-btn');
+        let section1 = document.querySelector('.pers-ring');
+        let section2 = document.querySelector('.pers-earrings');
+        let section3 = document.querySelector('.pers-necklace');
+        let section4 = document.querySelector('.pers-bracelet');
+
+        ring_btn.addEventListener('click', function(){
+            section1.classList.remove('hidden');
+            section2.classList.add('hidden');
+            section3.classList.add('hidden');
+            section4.classList.add('hidden');
+            window.scrollTo(0, 620);
+
+            document.getElementById('ring-order').addEventListener('click', function (){
+                let t = 'Inel';
+
+                let metals = document.getElementsByName('metal');
+                let m = Array.from(metals).find(radio => radio.checked);
+
+                let stones = document.getElementsByName('stone');
+                let s = Array.from(stones).find(radio => radio.checked);
+
+                let shapes = document.getElementsByName('shape');
+                let sh = Array.from(shapes).find(radio => radio.checked);
+
+                let sizes = document.getElementsByName('size');
+                let sz = Array.from(sizes).find(radio => radio.checked);
+
+                let personalize = {};
+                personalize.type = t;
+                personalize.metal = m.value;
+                personalize.stone = s.value;
+                personalize.shape = sh.value;
+                personalize.size = sz.value;
+
+                localStorage.setItem('personalize', JSON.stringify(personalize));
+                localStorage.setItem('ok', '0');
+                location.href = "checkout-ro.html";
+            });
+
+        });
+
+        earrings_btn.addEventListener('click', function(){
+            section1.classList.add('hidden');
+            section2.classList.remove('hidden');
+            section3.classList.add('hidden');
+            section4.classList.add('hidden');
+            window.scrollTo(0, 620);
+
+            document.getElementById('earrings-order').addEventListener('click', function (){
+                let t = 'Cercei';
+
+                let metals = document.getElementsByName('metal');
+                let m = Array.from(metals).find(radio => radio.checked);
+
+                let stones = document.getElementsByName('stone');
+                let s = Array.from(stones).find(radio => radio.checked);
+
+                let shapes = document.getElementsByName('type');
+                let sh = Array.from(shapes).find(radio => radio.checked);
+
+                let personalize = {};
+                personalize.type = t;
+                personalize.metal = m.value;
+                personalize.stone = s.value;
+                personalize.shape = sh.value;
+
+                localStorage.setItem('personalize', JSON.stringify(personalize));
+                localStorage.setItem('ok', '0');
+                location.href = "checkout-ro.html";
+            });
+        });
+
+        necklace_btn.addEventListener('click', function(){
+            section1.classList.add('hidden');
+            section2.classList.add('hidden');
+            section3.classList.remove('hidden');
+            section4.classList.add('hidden');
+            window.scrollTo(0, 620);
+
+            document.getElementById('necklace-order').addEventListener('click', function (){
+                let t = 'Colier';
+
+                let metals = document.getElementsByName('metal');
+                let m = Array.from(metals).find(radio => radio.checked);
+
+                let stones = document.getElementsByName('stone');
+                let s = Array.from(stones).find(radio => radio.checked);
+
+                let shapes = document.getElementsByName('shape');
+                let sh = Array.from(shapes).find(radio => radio.checked);
+
+                let pendants = document.getElementsByName('pendant');
+                let p = Array.from(pendants).find(radio => radio.checked);
+
+                let personalize = {};
+                personalize.type = t;
+                personalize.metal = m.value;
+                personalize.stone = s.value;
+                personalize.shape = sh.value;
+                personalize.pendant = p.value;
+
+                localStorage.setItem('personalize', JSON.stringify(personalize));
+                localStorage.setItem('ok', '0');
+                location.href = "checkout-ro.html";
+            });
+        });
+
+        bracelet_btn.addEventListener('click', function(){
+            section1.classList.add('hidden');
+            section2.classList.add('hidden');
+            section3.classList.add('hidden');
+            section4.classList.remove('hidden');
+            window.scrollTo(0, 620);
+
+            document.getElementById('bracelet-order').addEventListener('click', function (){
+                let t = 'Brățară';
+
+                let metals = document.getElementsByName('metal');
+                let m = Array.from(metals).find(radio => radio.checked);
+
+                let stones = document.getElementsByName('stone');
+                let s = Array.from(stones).find(radio => radio.checked);
+
+                let shapes = document.getElementsByName('shape');
+                let sh = Array.from(shapes).find(radio => radio.checked);
+
+                let pendants = document.getElementsByName('pendant');
+                let p = Array.from(pendants).find(radio => radio.checked);
+
+                let personalize = {};
+                personalize.type = t;
+                personalize.metal = m.value;
+                personalize.stone = s.value;
+                personalize.shape = sh.value;
+                personalize.pendant = p.value;
+
+                localStorage.setItem('personalize', JSON.stringify(personalize));
+                localStorage.setItem('ok', '0');
+                location.href = "checkout-ro.html";
+            });
+        });
+
+
+    </script>
+</body>
+</html>

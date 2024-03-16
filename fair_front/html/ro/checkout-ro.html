@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&family=Patrick+Hand+SC&family=Poppins:wght@400;500;600;700;800;900&family=Rufina:wght@400;700&family=Zilla+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>FAIR</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/diamond.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', serif;
+        }
+
+        body{
+            background-color: #F1F1F1;
+            overflow-x: hidden;
+            /* overflow-y: hidden; */
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #F1F1F1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            width: 55vw;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;
+        }
+
+        .frm{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .column{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .lil_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 16%;
+            width: 100%;
+            font-size: 0.8rem;
+        }
+
+        .state_zip, .expyear_cvv{
+            display: flex;
+            height: 16%;
+            width: 100%;
+            justify-content: space-between;
+            font-size: 0.8rem;
+        }
+
+        .b_input{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-around;
+            width: 46%;
+        }
+
+        .f_el{
+            height: 50%;
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+
+        button{
+            width: 100%;
+            height: 70%;
+            background-color: #703D35;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input{
+            height: 48%;
+            padding-left: 1vh;
+        }
+
+        .title{
+            height: 10%;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        i{
+            color: black;
+            margin-right: 1%;
+        }
+
+        #ch{
+            margin-right: 1%;
+            cursor: pointer;
+        }
+
+        .card{
+            width: 22%;
+            height: 70%;
+        }
+
+        .cards{
+            display: flex;
+            width: 50%;
+            height: 50%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #visa{
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        #aexpress{
+            background-image: url(https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2018/04/10121846/am_amex_06.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        #mastercard{
+            background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p3/19550737-logo-editorial-master-card-gratis-vetor.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        #discover{
+            background-image: url(https://i.pinimg.com/736x/44/a2/a0/44a2a04991fd6669b54b32a4ce14c169.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .product{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+        }
+
+        .product .cart-product-box{
+            display: flex;
+            justify-content: center;
+        }
+
+        .product .fav-prod-name{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .product .cart-price{
+            display: flex;
+            justify-content: center;
+        }
+
+        h2{
+            font-weight: 600;
+            font-family: 'Rufina', sans-serif;
+        }
+
+        @media only screen and (max-width: 1000px){
+            .box{
+                width: 80vw;
+            }
+
+            .product-box{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="pre-header">
+            <div class="languages">
+                <a href="checkout-ro.html">RO</a>
+                <div class="vertical-line"></div>
+                <a href="../en/checkout-en.html">EN</a>
+            </div>
+            <div class="log-sgnup">
+                <a href="login-en.html">Login</a>
+                <div class="vertical-line"></div>
+                <a href="sign-up-en.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="header">
+            <a href="index-en.html" class="logo">FAIR</a>
+            <ul class="menu">
+                <li><a href="products-en.html">PRODUSE</a></li>
+                <li><a href="about-us-en.html">DESPRE NOI</a></li>
+                <li><a href="personalize-en.html">PERSONALIZEAZĂ</a></li>
+                <li><a href="contacts-en.html">CONTACTE</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="icon" id="fav-button"><img src="assets/img/heart.png" alt="fav"></div>
+                <div class="icon" id="cart-button"><img src="assets/img/shopping-bag.png" alt="cart"></div>
+                <a href="profile-en.html" class="icon"><img src="assets/img/user.png" alt="profile"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="product"></div>
+    <section class="container">
+        <h2>ACHITARE SI LIVRARE</h2>
+        <div class="box">
+            <div class="frm">
+                <div class="column">
+                    <div class="title">
+                        <p>Adresa achitării</p>
+                    </div>
+                    <div class="lil_box">
+                        <label for="name"><i class="fa-solid fa-user"></i> Nume Prenume</label>
+                        <input type="text" id="name" placeholder="John M. Doe">
+                    </div>
+                    <div class="lil_box">
+                        <label for="email"><i class="fa-solid fa-envelope"></i>Email</label>
+                        <input type="text" id="email" placeholder="john@example.com">
+                    </div>
+                    <div class="lil_box">
+                        <label for="address"><i class="fa-solid fa-id-card"></i>Adresă</label>
+                        <input type="text" id="address" placeholder="542 W. 15th Street">
+                    </div>
+                    <div class="lil_box">
+                        <label for="city"><i class="fa-solid fa-landmark"></i>Oraș</label>
+                        <input type="text" id="city" placeholder="New York">
+                    </div>
+                    <div class="state_zip">
+                        <div class="b_input">
+                            <label for="state">Stat</label>
+                            <input type="text" id="state" placeholder="NY">
+                        </div>
+                        <div class="b_input">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" placeholder="10001">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="title">
+                        <p>Achitare</p>
+                    </div>
+                    <div class="lil_box">
+                        <label for="cards">Carduri acceptate</label>
+                        <div class="cards">
+                            <div id="visa" class="card"></div>
+                            <div id="aexpress" class="card"></div>
+                            <div id="mastercard" class="card"></div>
+                            <div id="discover" class="card"></div>
+                        </div>
+                    </div>
+                    <div class="lil_box">
+                        <label for="card_name">Numele de pe card</label>
+                        <input type="text" id="name_on_card" placeholder="John More Doe">
+                    </div>
+                    <div class="lil_box">
+                        <label for="card_number">Numărul</label>
+                        <input type="card_number" id="card_number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="lil_box">
+                        <label for="exp_month">Luna Exp</label>
+                        <input type="text" id="exp_month" placeholder="September">
+                    </div>
+                    <div class="expyear_cvv">
+                        <div class="b_input">
+                            <label for="exp_year">Anul Exp</label>
+                            <input type="text" id="exp_year" placeholder="2018">
+                        </div>
+                        <div class="b_input">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="352">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="f_el">
+                    <input type="checkbox" id="ch">
+                    <label for="ch">Adresa livrării aceeași cu achitării</label>
+                </div>
+                <div class="f_el button">
+                    <button id="checkout" onclick="verification()">ACHITĂ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="menu">
+            <li><a href="products-ro.html">PRODUSE</a></li>
+            <li><a href="about-us-ro.html">DESPRE NOI</a></li>
+            <li><a href="personalize-ro.html">PERSONALIZEAZĂ</a></li>
+            <li><a href="contacts-ro.html">CONTACTE</a></li>
+        </ul>
+        <p>Contactează-ne prin email cu solicitarea ta și vom lucra cu tine în privat pentru a găsi ceea ce cauți! Puteți stabili o programare la biroul nostru sau o întâlnire interactivă prin FaceTime. Ne-ar face plăcere să vă ajutăm să găsiți bijuteriile visurilor dvs.</p>
+        <label for="email">
+            <input type="text" id="email-box" placeholder="Introduce-ți email">
+            <img src="assets/img/email.png" alt="submit" id="email-submit">
+        </label>
+        <p class="copyrights">&#169 2023 Fair Jewelry Store. Toate drepturile rezervate.</p>
+    </footer>
+
+    <div id="big-shopping-cart">
+        <div>
+            <p>Coș</p>
+            <button id="cart-close-button">+</button>
+        </div>
+        <div id="shopping-cart">Până când nu aveți nimic în coș.</div>
+    </div>
+    <div id="overlay"></div>
+
+    <div id="favourites">
+        <div>
+            <p>Articole preferate</p>
+            <button id="fav-close-button">+</button>
+        </div>
+        <div id="fav">Până când nu aveți nimic în preferate.</div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/checkout.js"></script>
+    <script>
+        document.getElementById('checkout').addEventListener('click', function(){
+            let b = localStorage.getItem('b');
+            if(b == 0){
+                location.href = 'index-ro.html';
+            }
+        });
+    </script>
+</body>
+</html>

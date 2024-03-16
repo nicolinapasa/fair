@@ -1,0 +1,396 @@
+{
+    "products": [
+        {
+            "type": "Ring",
+            "metal": "Gold",
+            "stone": "Sapphire",
+            "shape": "Elongated",
+            "img": "assets/img/ring1.jpg",
+            "price": "14.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Rose-Gold",
+            "stone": "Sapphire",
+            "shape": "Oval",
+            "img": "assets/img/ring2.jpg",
+            "price": "19.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Rose-Gold",
+            "stone": "Sapphire",
+            "shape": "Round",
+            "img": "assets/img/ring3.jpg",
+            "price": "27.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Gold",
+            "stone": "Diamond",
+            "shape": "Round",
+            "img": "assets/img/ring4.jpg",
+            "price": "25.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Silver",
+            "stone": "",
+            "shape": "",
+            "img": "assets/img/ring5.jpg",
+            "price": "28.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Silver",
+            "stone": "",
+            "shape": "",
+            "img": "assets/img/ring6.jpg",
+            "price": "22.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Gold",
+            "stone": "Ruby",
+            "shape": "Oval",
+            "img": "assets/img/ring7.jpg",
+            "price": "20.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Rose-Gold",
+            "stone": "Sapphire",
+            "shape": "Oval",
+            "img": "assets/img/ring8.jpg",
+            "price": "21.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Silver",
+            "stone": "Amethyst",
+            "shape": "Elongated",
+            "img": "assets/img/ring9.jpg",
+            "price": "16.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Gold",
+            "stone": "Amethyst",
+            "shape": "Round",
+            "img": "assets/img/ring10.jpg",
+            "price": "15.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Gold",
+            "stone": "Pearl",
+            "shape": "Round",
+            "img": "assets/img/ring11.jpg",
+            "price": "12.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Rose-Gold",
+            "stone": "Diamond",
+            "shape": "Round",
+            "img": "assets/img/ring12.jpg",
+            "price": "13.99"
+        },
+        {
+            "type": "Ring",
+            "metal": "Rose-Gold",
+            "stone": "",
+            "shape": "",
+            "img": "assets/img/ring13.jpg",
+            "price": "13.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Rose-Gold",
+            "stone": "Sapphire",
+            "shape": "Drop",
+            "img": "assets/img/ear1.jpg",
+            "price": "17.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Silver",
+            "stone": "Sapphire",
+            "shape": "Stud",
+            "img": "assets/img/ear2.jpg",
+            "price": "11.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Gold",
+            "stone": "Ruby",
+            "shape": "Drop",
+            "img": "assets/img/ear3.jpg",
+            "price": "12.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Silver",
+            "stone": "Ruby",
+            "shape": "Drop",
+            "img": "assets/img/ear4.jpg",
+            "price": "29.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Gold",
+            "stone": "Amethyst",
+            "shape": "Stud",
+            "img": "assets/img/ear5.jpg",
+            "price": "17.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Gold",
+            "stone": "Ruby",
+            "shape": "Stud",
+            "img": "assets/img/ear6.jpg",
+            "price": "11.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Gold",
+            "stone": "",
+            "shape": "Hoop",
+            "img": "assets/img/ear7.jpg",
+            "price": "13.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Gold",
+            "stone": "Diamond",
+            "shape": "Drop",
+            "img": "assets/img/ear8.jpg",
+            "price": "16.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Silver",
+            "stone": "Diamond",
+            "shape": "Drop",
+            "img": "assets/img/ear9.jpg",
+            "price": "18.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Silver",
+            "stone": "",
+            "shape": "Hoop",
+            "img": "assets/img/ear10.jpg",
+            "price": "12.99"
+        },
+        {
+            "type": "Earrings",
+            "metal": "Silver",
+            "stone": "o",
+            "shape": "Butterfly",
+            "img": "assets/img/ear4.jpg",
+            "price": "27.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Silver",
+            "stone": "",
+            "shape": "Heart",
+            "img": "assets/img/n1.jpg",
+            "price": "28.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Silver",
+            "stone": "Ruby",
+            "shape": "Oval",
+            "img": "assets/img/n2.jpg",
+            "price": "21.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Silver",
+            "stone": "Ruby",
+            "shape": "Elongated",
+            "img": "assets/img/n3.jpg",
+            "price": "26.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Rose-Gold",
+            "stone": "Amethyst",
+            "shape": "Pear",
+            "img": "assets/img/n4.jpg",
+            "price": "16.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Silver",
+            "stone": "Sapphire",
+            "shape": "Round",
+            "img": "assets/img/n5.jpg",
+            "price": "21.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Gold",
+            "stone": "Sapphire",
+            "shape": "Elongated",
+            "img": "assets/img/n6.jpg",
+            "price": "24.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Silver",
+            "stone": "Diamond",
+            "shape": "Round",
+            "img": "assets/img/n7.jpg",
+            "price": "25.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Gold",
+            "stone": "Diamond",
+            "shape": "Pear",
+            "img": "assets/img/n8.jpg",
+            "price": "11.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Silver",
+            "stone": "Pearl",
+            "shape": "",
+            "img": "assets/img/n9.jpg",
+            "price": "14.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Gold",
+            "stone": "Pearl",
+            "shape": "",
+            "img": "assets/img/n10.jpg",
+            "price": "13.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Rose-Gold",
+            "stone": "Diamond",
+            "shape": "Floral",
+            "img": "assets/img/n1.jpg",
+            "price": "19.99"
+        },
+        {
+            "type": "Necklace",
+            "metal": "Rose-Gold",
+            "stone": "Amethyst",
+            "shape": "Pear",
+            "img": "assets/img/n12.jpg",
+            "price": "21.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Silver",
+            "stone": "Diamond",
+            "shape": "",
+            "img": "assets/img/b1.jpg",
+            "price": "15.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Silver",
+            "stone": "Diamond",
+            "shape": "",
+            "img": "assets/img/b2.jpg",
+            "price": "16.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Silver",
+            "stone": "Diamond",
+            "shape": "",
+            "img": "assets/img/b3.jpg",
+            "price": "13.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Gold",
+            "stone": "Sapphire",
+            "shape": "",
+            "img": "assets/img/b4.jpg",
+            "price": "18.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Gold",
+            "stone": "Pearl",
+            "shape": "",
+            "img": "assets/img/b5.jpg",
+            "price": "21.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Gold",
+            "stone": "Pearl",
+            "shape": "",
+            "img": "assets/img/b6.jpg",
+            "price": "25.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Silver",
+            "stone": "Pearl",
+            "shape": "Floral",
+            "img": "assets/img/b7.jpg",
+            "price": "29.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Gold",
+            "stone": "Diamond",
+            "shape": "Star",
+            "img": "assets/img/b8.jpg",
+            "price": "19.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Silver",
+            "stone": "Ruby",
+            "shape": "Round",
+            "img": "assets/img/b9.jpg",
+            "price": "17.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Gold",
+            "stone": "Amethyst",
+            "shape": "Round",
+            "img": "assets/img/b10.jpg",
+            "price": "21.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Gold",
+            "stone": "Diamond",
+            "shape": "",
+            "img": "assets/img/b11.jpg",
+            "price": "25.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Rose-Gold",
+            "stone": "Diamond",
+            "shape": "Floral",
+            "img": "assets/img/b12.jpg",
+            "price": "12.99"
+        },
+        {
+            "type": "Bracelet",
+            "metal": "Gold",
+            "stone": "Diamond",
+            "shape": "Butterfly",
+            "img": "assets/img/b13.jpg",
+            "price": "17.99"
+        }
+    ]
+}
